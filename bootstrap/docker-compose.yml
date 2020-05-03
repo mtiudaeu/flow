@@ -1,0 +1,16 @@
+# sudo docker-compose run ubuntu
+version: '3.7'
+
+services:
+    ubuntu:
+      container_name: ubuntu-rust
+      image: ubuntu-rust
+      volumes:
+        - type: volume
+        source: md_git_repoes
+        target: /srv
+      stdin_open: true
+      tty: true
+
+volumes:
+    md_git_repoes:
