@@ -7,8 +7,8 @@ services:
       image: ubuntu-rust
       volumes:
         - type: volume
-        source: md_git_repoes
-        target: /srv
+          source: md_git_repoes
+          target: /srv
       stdin_open: true
       tty: true
 
