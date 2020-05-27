@@ -14,6 +14,7 @@ Before next command, edit Dockerfile and write "user.email" & "user.name"
 ```
 sudo docker build -t ubuntu-rust .
 ```
+Remove space before "source: ..." & "target: ..." in docker-compose.yml. (Very sadly :(, curl add/remove space on the docker-compose.yml)
 ```
 sudo docker-compose run ubuntu
 ```
