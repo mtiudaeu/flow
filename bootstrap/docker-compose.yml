@@ -6,7 +6,7 @@ services:
       container_name: ubuntu-rust
       image: ubuntu-rust
       volumes:
-        - type: volume
+      - type: volume
           source: md_git_repoes
           target: /srv
       stdin_open: true
