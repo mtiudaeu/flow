@@ -1,4 +1,4 @@
-# sudo docker-compose run ubuntu
+# sudo docker-compose run --service-ports ubuntu
 version: '3.7'
 
 services:
@@ -10,7 +10,7 @@ services:
         source: md_git_repoes
         target: /srv
       ports:
-      - 8000:8000
+      - "8000:8000"
       stdin_open: true
       tty: true
 
