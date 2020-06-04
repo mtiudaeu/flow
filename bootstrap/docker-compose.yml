@@ -9,6 +9,8 @@ services:
       - type: volume
         source: md_git_repoes
         target: /srv
+      ports:
+      - 8000:8000
       stdin_open: true
       tty: true
 
