@@ -7,7 +7,7 @@ RUN apt update && \
 	curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
 	apt install -y nodejs && \
 	rustup install nightly && \
-	rustup component add rust-src && \
+	rustup default nightly && \
 	rustup component add rust-src && \
 	apt install -y build-essential libssl-dev pkg-config
 	
