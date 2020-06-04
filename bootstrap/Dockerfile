@@ -6,9 +6,9 @@ RUN apt update && \
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y && \
 	curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
 	apt install -y nodejs && \
+	rustup component add rust-src && \
 	rustup install nightly && \
 	rustup default nightly && \
-	rustup component add rust-src && \
 	apt install -y build-essential libssl-dev pkg-config
 	
 
