@@ -1,0 +1,34 @@
+{
+"triggers" : [
+	{ "key" : "A", "command_name" : "init_character"},
+	{ "key" : "B", "command_name" : "move"}
+],
+"commands" : [
+	{ 
+	  "command_name" : "init_character",
+	  "command_values" : [
+		{
+			"key":"Mouse",
+			"command_type" : "MoveAbs",
+			"point" : {
+				"x":0,
+				"y":0
+			}
+		}
+	]},
+	{ 
+	  "command_name" : "move",
+	  "command_values" : [
+		{
+			"key":"Mouse",
+			"command_type" : "MoveAbs",
+			"point" : {
+				"x":500,
+				"y":500
+			}
+		}
+	]}
+
+],
+"command_interval_ms":50
+}

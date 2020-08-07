@@ -1,0 +1,16 @@
+[package]
+name = "flow_main"
+version = "0.1.0"
+authors = ["Mathieu"]
+edition = "2018"
+
+[dependencies]
+enigo = "0.0.14"
+inputbot = "0.4.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+global = "0.4.3"
+winapi = { version = "0.3.9", features = ["winuser"] }
+flow_get_pos = { path = "../flow_get_pos", version = "0.1.0"}
+flow_command = { path = "../flow_command", version = "0.1.0"}

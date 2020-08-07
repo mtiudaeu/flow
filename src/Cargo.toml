@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "flow_main",
+  "flow_get_pos",
+  "flow_command",
+  "flow_command_json",
+]
